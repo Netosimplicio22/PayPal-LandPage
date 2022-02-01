@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 100vw;
+    height: 72px;
+    padding: 0px 130px;
+}
+
+header .logo img{
+    width: 136px;
+    height: 43px;
+}
+
+header .btns-nav button{
+    margin-right: 10px;
+    height: 36px;
+}
+
+header .btns-nav #entrar{
+    width: 84px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #0070BA;
+}
+
+header .btns-nav #entrar a{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0070BA;
+    text-decoration: none;
+}
+
+header .btns-nav #conta{
+    width: 94px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #0070BA;
+}
+
+header .btns-nav #conta:hover{
+    background-color: #0449c9;
+}
+
+header .btns-nav #conta a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 490px;
+}
+
+main form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 540px;
+    height: 450px;
+    border: 0;
+    border-radius: 20px;
+    padding: 48px 48px 0px 48px;
+}
+
+main form .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+main form .titulo h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #2C2E2F;
+    font-weight: 400;
+}
+
+main form .input-block .input-radio{
+    display: flex;
+    align-items: center;
+}
+
+#op1{
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid #DE0063;
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+#op1::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #DE0063;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+
+
+#op1:checked::before{
+    opacity: 1;
+}
+
+main form .input-block .input-radio .label .label1{
+    margin-left: 10px;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #DE0063;
+    font-weight: 600;
+}
+
+#op2{
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid #003087;
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+#op2::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #003087;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+
+
+#op2:checked::before{
+    opacity: 1;
+}
+
+main form .input-block .input-radio .label .label2{
+    margin-left: 10px;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #003087;
+    font-weight: 600;
+}
+
+main form .input-block .texto-sobre{
+    margin: 10px 0px 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .input-block .texto-sobre p{
+    color: #2C2E2F;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+main form .btn-avanced{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .btn-avanced button{
+    width: 124px;
+    height: 50px;
+    border: 0;
+    background-color: #0070BA;
+    border-radius: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+main form .btn-avanced button:hover{
+    background-color: #0449c9;
+}
+
+footer{
+    width: 100vw;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+footer hr{
+    width: 1120px;
+    margin: 10px 0px 15px 0px;
+    border: 1px solid white;
+}
+
+footer .link-a1 a{
+    text-align: left;
+}
+
+footer .link-a2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
